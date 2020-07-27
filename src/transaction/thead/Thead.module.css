@@ -1,0 +1,13 @@
+
+.name {
+	width: 200px;
+	background: #5e5151;
+	text-shadow: 0 1px 1px #2D2020;
+	color: white;
+	padding: 10px 20px;
+}
+.name {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+}

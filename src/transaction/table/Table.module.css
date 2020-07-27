@@ -1,0 +1,13 @@
+.transHistory {
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	font-size: 14px;
+	border-radius: 10px;
+	border-spacing: 0;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+}
