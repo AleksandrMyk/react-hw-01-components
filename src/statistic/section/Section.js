@@ -1,19 +1,28 @@
 import React from 'react';
 import style from '../section/Section.module.css';
-import data from '../data.json';
-import Title from '../title/Title';
 import Stat from '../stat/Stat';
+import data from '../data.json';
+import PropTypes from 'prop-types';
 
-function Section() {
+function Section({ title }) {
 	return (
 		<>
 			<h1>Statistics</h1>
 			<section className={style.section}>
-				<Title />
-				<Stat info={data}/>
+				<h2 className={style.title}>{title}</h2>
+				<Stat dataJson={data}/>
 			</section>
 		</>
 	)
 }
 
+Section.defaultProps = {
+	title: 'Upload stats',
+};
+
+Section.propTypes = {
+	title: PropTypes.string,
+}
+
 export default Section;
+

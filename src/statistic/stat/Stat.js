@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Stat.module.css';
 import PropTypes from 'prop-types';
 
-function Stat({ info }) {
+function Stat({ dataJson }) {
 	function randomColor() {
 		return `rgb(
     ${Math.floor(Math.random() * 256)},
@@ -13,7 +13,7 @@ function Stat({ info }) {
 	return (
 		<>
 			<ul className={style.statList}>
-				{info.map(data => (
+				{dataJson.map(data => (
 					<li 
 					className={style.item} 
 					key={data.id}
