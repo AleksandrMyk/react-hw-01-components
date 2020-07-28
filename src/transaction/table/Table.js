@@ -10,7 +10,7 @@ function Table() {
 			<h1>Transaction History</h1>
 			<table className={style.transHistory}>
 				<Thead />
-				<Tbody info={data}/>
+				<Tbody dataJson={data}/>
 			</table>
 		</>
 	)

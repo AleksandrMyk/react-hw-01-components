@@ -9,7 +9,7 @@ function Section({ title }) {
 		<>
 			<h1>Statistics</h1>
 			<section className={style.section}>
-				<h2 className={style.title}>{title}</h2>
+				{title ? <h2 className={style.title}>{title}</h2> : null}
 				<Stat dataJson={data}/>
 			</section>
 		</>

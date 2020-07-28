@@ -8,7 +8,7 @@ export default function FriendsList() {
 		<>
 			<h1>Friends List</h1>
 			<ul className={style.friendsList}>
-				<FriendItems info={data}/>
+				<FriendItems dataJson={data}/>
       </ul>
 		</>
 	)

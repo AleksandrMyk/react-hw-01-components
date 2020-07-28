@@ -3,11 +3,11 @@ import style from './Tbody.module.css';
 import PropTypes from 'prop-types';
 
 
-function Tbody({ info }) {
+function Tbody({ dataJson }) {
 	return (
 		<>
 		<tbody className={style.body}>
-		{info.map(data => (
+				{dataJson.map(data => (
 			<tr 
 			className={style.string}
 			key={data.id}>
@@ -22,7 +22,7 @@ function Tbody({ info }) {
 }
 
 Tbody.propTypes = {
-	info: PropTypes.arrayOf(
+	dataJson: PropTypes.arrayOf(
 		PropTypes.shape({
 			id: PropTypes.string.isRequired,
 			type: PropTypes.string.isRequired,

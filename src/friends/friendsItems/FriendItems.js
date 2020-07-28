@@ -2,10 +2,10 @@ import React from 'react';
 import style from './FriendItems.module.css';
 import PropTypes from 'prop-types';
 
-function FriendItems({ info }) {
+function FriendItems({ dataJson }) {
 	return (
 		<>
-		{info.map(data => (
+			{dataJson.map(data => (
 			<li 
 			className={style.item}
 			key={data.id}>
@@ -24,7 +24,7 @@ function FriendItems({ info }) {
 }
 
 FriendItems.propTypes = {
-	info: PropTypes.arrayOf(
+	dataJson: PropTypes.arrayOf(
 		PropTypes.shape({
 			id: PropTypes.number.isRequired,
 			avatar: PropTypes.node.isRequired,
